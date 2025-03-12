@@ -14,7 +14,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="overflow-x-hidden overflow-y-hidden">
+  <body>
     <nav
       class="w-full h-[65px] bg-[#F6F6F6] border-b border-b-[#c3c3c3] flex items-center justify-between"
     >
@@ -60,7 +60,9 @@
       </aside>
     </nav>
 
-    <main class="bg-[#F6F6F6] h-screen w-screen flex justify-between">
+    <main
+      class="bg-[#F6F6F6] h-[calc(100vh-65px)] w-screen flex justify-between"
+    >
       <aside class="font-semibold ml-[70px] mt-[45px]">
         <figure>
           <figcaption class="text-[#828DA8] text-sm">BROWSE</figcaption>
@@ -79,134 +81,352 @@
           <figcaption class="text-[#828DA8] text-sm">LIBRARY</figcaption>
           <br />
           <ul class="flex gap-4 flex-col">
-            <li title="History"><i class="fa-solid fa-clock-rotate-left"></i> History</li>
-            <li title="Liked Songs"><i class="fa-solid fa-music"></i> Liked Songs</li>
-            <li title="Albums"><i class="fa-solid fa-record-vinyl"></i> Albums</li>
-            <li title="Podcasts"><i class="fa-solid fa-podcast"></i> Podcasts</li>
+            <li title="History">
+              <i class="fa-solid fa-clock-rotate-left"></i> History
+            </li>
+            <li title="Liked Songs">
+              <i class="fa-solid fa-music"></i> Liked Songs
+            </li>
+            <li title="Albums">
+              <i class="fa-solid fa-record-vinyl"></i> Albums
+            </li>
+            <li title="Podcasts">
+              <i class="fa-solid fa-podcast"></i> Podcasts
+            </li>
             <li title="Artists"><i class="fa-solid fa-headset"></i> Artists</li>
           </ul>
         </figure>
         <br />
         <div
-          class="text-[#34cbb9] h-[45px] w-[130px] border rounded-3xl p-[8px] hover:cursor-pointer"
+          class="text-[#34cbb9] h-[45px] w-[130px] border rounded-3xl p-[8px] hover:cursor-pointer mr-4"
         >
           + New Playlist
         </div>
       </aside>
       <article
-        class="flex flex-wrap gap-x-5 gap-y-0 items-center w-[80%] text-center text-sm font-semibold justify-start"
+        class="flex items-start w-[80%] text-center text-sm font-semibold"
       >
         <div
-          class="font-semibold absolute top-[100px] left-[305px] text-[20px]"
+          class="font-semibold text-[20px] absolute top-[110px] left-[305px]"
         >
           Trending Now
         </div>
-        <div>
-          <img
-            src="./jiosaavn/Dragon-Tamil-2025-20250221231203-150x150.jpg
-          "
-            alt="Dragon movie"
-          />
-          Dragon
-          <p>Leon James, Anirudh</p>
+        <div class="flex flex-wrap gap-4 pt-28 container">
+          <div class="relative group">
+            <img
+              src="./jiosaavn/Dragon-Tamil-2025-20250221231203-150x150.jpg
+            "
+              alt="Dragon movie"
+            />
+            <div
+              class="h-[150px] w-full bg-black/60 hidden group-hover:flex justify-center items-center group-hover:cursor-pointer absolute top-0 left-0 rounded-[5px]"
+            >
+              <i
+                class="fa-solid fa-play text-white p-3 bg-black rounded-full text-xl"
+              ></i>
+              <i
+                class="fa-regular fa-heart text-white absolute left-2 bottom-2 text-xl"
+              ></i>
+              <i
+                class="fa-solid fa-ellipsis text-white absolute right-2 bottom-2 text-xl"
+              ></i>
+            </div>
+            Dragon
+            <p class="font-normal">Leon James, Anirudh R...</p>
+          </div>
+          <div class="relative group">
+            <img
+              src="./jiosaavn/2000sMelodiesTamil_20240910061317_150x150.jpg"
+              alt="2000sMelodiesTamil_20240910061317_150x150"
+            />
+            <div
+              class="h-[150px] w-full bg-black/60 hidden group-hover:flex justify-center items-center group-hover:cursor-pointer absolute top-0 left-0 rounded-[5px]"
+            >
+              <i
+                class="fa-solid fa-play text-white p-3 bg-black rounded-full text-xl"
+              ></i>
+              <i
+                class="fa-regular fa-heart text-white absolute left-2 bottom-2 text-xl"
+              ></i>
+              <i
+                class="fa-solid fa-ellipsis text-white absolute right-2 bottom-2 text-xl"
+              ></i>
+            </div>
+            2000's melodies tamil
+            <p class="font-normal">21.2k fans</p>
+          </div>
+          <div class="relative group">
+            <img
+              src="./jiosaavn/Sithira-Puthiri-from-Think-Indie-Tamil-2025-20250131150403-150x150.jpg"
+              alt="Sai"
+            />
+            <div
+              class="h-[150px] w-full bg-black/60 hidden group-hover:flex justify-center items-center group-hover:cursor-pointer absolute top-0 left-0 rounded-[5px]"
+            >
+              <i
+                class="fa-solid fa-play text-white p-3 bg-black rounded-full text-xl"
+              ></i>
+              <i
+                class="fa-regular fa-heart text-white absolute left-2 bottom-2 text-xl"
+              ></i>
+              <i
+                class="fa-solid fa-ellipsis text-white absolute right-2 bottom-2 text-xl"
+              ></i>
+            </div>
+            Sithira puthiri
+            <p class="font-normal">Sai Abhyankar</p>
+          </div>
+          <div class="relative group">
+            <img
+              src="./jiosaavn/Matta-From-The-Greatest-Of-All-Time-Tamil-2024-20240831141002-150x150.jpg"
+              alt="Matta"
+            />
+            <div
+              class="h-[150px] w-full bg-black/60 hidden group-hover:flex justify-center items-center group-hover:cursor-pointer absolute top-0 left-0 rounded-[5px]"
+            >
+              <i
+                class="fa-solid fa-play text-white p-3 bg-black rounded-full text-xl"
+              ></i>
+              <i
+                class="fa-regular fa-heart text-white absolute left-2 bottom-2 text-xl"
+              ></i>
+              <i
+                text-xl
+                class="fa-solid fa-ellipsis text-white absolute right-2 bottom-2 text-xl"
+              ></i>
+            </div>
+            Matta
+            <p class="font-normal">Yuvan Shankar Raja</p>
+          </div>
+          <div class="relative group">
+            <img
+              src="./jiosaavn/TopKuthuTamil_20241015113436_150x150.jpg"
+              alt="TopKuthuTamil"
+            />
+            <div
+              class="h-[150px] w-full bg-black/60 hidden group-hover:flex justify-center items-center group-hover:cursor-pointer absolute top-0 left-0 rounded-[5px]"
+            >
+              <i
+                class="fa-solid fa-play text-white p-3 bg-black rounded-full text-xl"
+              ></i>
+              <i
+                class="fa-regular fa-heart text-white absolute left-2 bottom-2 text-xl"
+              ></i>
+              <i
+                class="fa-solid fa-ellipsis text-white absolute right-2 bottom-2 text-xl"
+              ></i>
+            </div>
+            Top kuthu - tamil
+            <p class="font-normal">74k fans</p>
+          </div>
+          <div class="relative group">
+            <img
+              src="./jiosaavn/G-V-PrakashLoveSongsTamil_20240213055149_150x150.jpg"
+              alt="GVP"
+            />
+            <div
+              class="h-[150px] w-full bg-black/60 hidden group-hover:flex justify-center items-center group-hover:cursor-pointer absolute top-0 left-0 rounded-[5px]"
+            >
+              <i
+                class="fa-solid fa-play text-white p-3 bg-black rounded-full text-xl"
+              ></i>
+              <i
+                class="fa-regular fa-heart text-white absolute left-2 bottom-2 text-xl"
+              ></i>
+              <i
+                class="fa-solid fa-ellipsis text-white absolute right-2 bottom-2 text-xl"
+              ></i>
+            </div>
+            GV Prakash songs
+            <p class="font-normal">6.4k fans</p>
+          </div>
+          <div class="relative group">
+            <img
+              src="./jiosaavn/Kannadi-Poove-From-Retro-Tamil-2025-20250212141009-150x150.jpg"
+              alt="Retro"
+            />
+            <div
+              class="h-[150px] w-full bg-black/60 hidden group-hover:flex justify-center items-center group-hover:cursor-pointer absolute top-0 left-0 rounded-[5px]"
+            >
+              <i
+                class="fa-solid fa-play text-white p-3 bg-black rounded-full text-xl"
+              ></i>
+              <i
+                class="fa-regular fa-heart text-white absolute left-2 bottom-2 text-xl"
+              ></i>
+              <i
+                class="fa-solid fa-ellipsis text-white absolute right-2 bottom-2 text-xl"
+              ></i>
+            </div>
+            Kannadi Poove
+            <p class="font-normal">Santhosh Narayanan</p>
+          </div>
+          <div class="relative group">
+            <img
+              src="./jiosaavn/Amaran-Tamil-Tamil-2024-20241119174100-150x150.jpg"
+              alt="Amaran"
+            />
+            <div
+              class="h-[150px] w-full bg-black/60 hidden group-hover:flex justify-center items-center group-hover:cursor-pointer absolute top-0 left-0 rounded-[5px]"
+            >
+              <i
+                class="fa-solid fa-play text-white p-3 bg-black rounded-full text-xl"
+              ></i>
+              <i
+                class="fa-regular fa-heart text-white absolute left-2 bottom-2 text-xl"
+              ></i>
+              <i
+                class="fa-solid fa-ellipsis text-white absolute right-2 bottom-2 text-xl"
+              ></i>
+            </div>
+            Amaran (tamil)
+            <p class="font-normal">GV Prakash kumar</p>
+          </div>
+          <div class="relative group">
+            <img
+              src="./jiosaavn/Devara-Part-1-Tamil-Tamil-2024-20240926171017-150x150.jpg"
+              alt="Devara"
+            />
+            <div
+              class="h-[150px] w-full bg-black/60 hidden group-hover:flex justify-center items-center group-hover:cursor-pointer absolute top-0 left-0 rounded-[5px]"
+            >
+              <i
+                class="fa-solid fa-play text-white p-3 bg-black rounded-full text-xl"
+              ></i>
+              <i
+                class="fa-regular fa-heart text-white absolute left-2 bottom-2 text-xl"
+              ></i>
+              <i
+                class="fa-solid fa-ellipsis text-white absolute right-2 bottom-2 text-xl"
+              ></i>
+            </div>
+            Devara (tamil)
+            <p class="font-normal">Anirudh Ravichander</p>
+          </div>
+          <div class="relative group">
+            <img
+              src="./jiosaavn/Dheema-From-Love-Insurance-Kompany-Tamil-2024-20241015191442-150x150.jpg"
+              alt="LIK"
+            />
+            <div
+              class="h-[150px] w-full bg-black/60 hidden group-hover:flex justify-center items-center group-hover:cursor-pointer absolute top-0 left-0 rounded-[5px]"
+            >
+              <i
+                class="fa-solid fa-play text-white p-3 bg-black rounded-full text-xl"
+              ></i>
+              <i
+                class="fa-regular fa-heart text-white absolute left-2 bottom-2 text-xl"
+              ></i>
+              <i
+                class="fa-solid fa-ellipsis text-white absolute right-2 bottom-2 text-xl"
+              ></i>
+            </div>
+            Dheema
+            <p class="font-normal">Anirudh Ravichander</p>
+          </div>
+          <div class="relative group">
+            <img
+              src="./jiosaavn/Chikitu-Vibe-From-Coolie-Tamil-2024-20241212221629-150x150.jpg"
+              alt="Coolie"
+            />
+            <div
+              class="h-[150px] w-full bg-black/60 hidden group-hover:flex justify-center items-center group-hover:cursor-pointer absolute top-0 left-0 rounded-[5px]"
+            >
+              <i
+                class="fa-solid fa-play text-white p-3 bg-black rounded-full text-xl"
+              ></i>
+              <i
+                class="fa-regular fa-heart text-white absolute left-2 bottom-2 text-xl"
+              ></i>
+              <i
+                class="fa-solid fa-ellipsis text-white absolute right-2 bottom-2 text-xl"
+              ></i>
+            </div>
+            Chikitu vibe
+            <p class="font-normal">Anirdh Ravichander</p>
+          </div>
+          <div class="relative group">
+            <img
+              src="./jiosaavn/Paiya-Dei-from-Think-Indie-Tamil-2024-20241023225604-150x150.jpg"
+              alt="paiyadei"
+            />
+            <div
+              class="h-[150px] w-full bg-black/60 hidden group-hover:flex justify-center items-center group-hover:cursor-pointer absolute top-0 left-0 rounded-[5px]"
+            >
+              <i
+                class="fa-solid fa-play text-white p-3 bg-black rounded-full text-xl"
+              ></i>
+              <i
+                class="fa-regular fa-heart text-white absolute left-2 bottom-2 text-xl"
+              ></i>
+              <i
+                class="fa-solid fa-ellipsis text-white absolute right-2 bottom-2 text-xl"
+              ></i>
+            </div>
+            Paiya Dei
+            <p class="font-normal">Asal Kolaru</p>
+          </div>
+          <div class="relative group">
+            <img
+              src="./jiosaavn/Kadhalikka-Neramillai-Tamil-2025-20250107171541-150x150.jpg"
+              alt="ARR"
+            />
+            <div
+              class="h-[150px] w-full bg-black/60 hidden group-hover:flex justify-center items-center group-hover:cursor-pointer absolute top-0 left-0 rounded-[5px]"
+            >
+              <i
+                class="fa-solid fa-play text-white p-3 bg-black rounded-full text-xl"
+              ></i>
+              <i
+                class="fa-regular fa-heart text-white absolute left-2 bottom-2 text-xl"
+              ></i>
+              <i
+                class="fa-solid fa-ellipsis text-white absolute right-2 bottom-2 text-xl"
+              ></i>
+            </div>
+            Yennai Izhukkuthadi
+            <p class="font-normal">A.R.Rahman</p>
+          </div>
+          <div class="relative group">
+            <img
+              src="./jiosaavn/SadLoveTamil_20250214065131_150x150.jpg"
+              alt="SadLoveTamil"
+            />
+            <div
+              class="h-[150px] w-full bg-black/60 hidden group-hover:flex justify-center items-center group-hover:cursor-pointer absolute top-0 left-0 rounded-[5px]"
+            >
+              <i
+                class="fa-solid fa-play text-white p-3 bg-black rounded-full text-xl"
+              ></i>
+              <i
+                class="fa-regular fa-heart text-white absolute left-2 bottom-2 text-xl"
+              ></i>
+              <i
+                class="fa-solid fa-ellipsis text-white absolute right-2 bottom-2 text-xl"
+              ></i>
+            </div>
+            Sad Love - Tamil
+            <p class="font-normal">39.7 k fans</p>
+          </div>
         </div>
-        <div>
-          <img
-            src="./jiosaavn/2000sMelodiesTamil_20240910061317_150x150.jpg"
-            alt="2000sMelodiesTamil_20240910061317_150x150"
-          />
-          2000's melodies tamil
-          <p>21.2k fans</p>
-        </div>
-        <div>
-          <img
-            src="./jiosaavn/Sithira-Puthiri-from-Think-Indie-Tamil-2025-20250131150403-150x150.jpg"
-            alt="Sai"
-          />
-          Sithira puthiri
-          <p>Sai Abhyankar</p>
-        </div>
-        <div>
-          <img
-            src="./jiosaavn/Matta-From-The-Greatest-Of-All-Time-Tamil-2024-20240831141002-150x150.jpg"
-            alt="Matta"
-          />Matta
-          <p>Yuvan Shankar Raja</p>
-        </div>
-        <div>
-          <img
-            src="./jiosaavn/TopKuthuTamil_20241015113436_150x150.jpg"
-            alt="TopKuthuTamil"
-          />Top kuthu - tamil
-          <p>74k fans</p>
-        </div>
-        <div>
-          <img
-            src="./jiosaavn/G-V-PrakashLoveSongsTamil_20240213055149_150x150.jpg"
-            alt="GVP"
-          />GV Prakash songs
-          <p>6.4k fans</p>
-        </div>
-        <div>
-          <img
-            src="./jiosaavn/Kannadi-Poove-From-Retro-Tamil-2025-20250212141009-150x150.jpg"
-            alt="Retro"
-          />
-          Kannadi Poove
-          <p>Santhosh Narayanan</p>
-        </div>
-        <div>
-          <img
-            src="./jiosaavn/Amaran-Tamil-Tamil-2024-20241119174100-150x150.jpg"
-            alt="Amaran"
-          />Amaran (tamil)
-          <p>GV Prakash kumar</p>
-        </div>
-        <div>
-          <img
-            src="./jiosaavn/Devara-Part-1-Tamil-Tamil-2024-20240926171017-150x150.jpg"
-            alt="Devara"
-          />
-          Devara (tamil)
-          <p>Anirudh Ravichander</p>
-        </div>
-        <div>
-          <img
-            src="./jiosaavn/Dheema-From-Love-Insurance-Kompany-Tamil-2024-20241015191442-150x150.jpg"
-            alt="LIK"
-          />
-          Dheema
-          <p>Anirudh Ravichander</p>
-        </div>
-        <div>
-          <img
-            src="./jiosaavn/Chikitu-Vibe-From-Coolie-Tamil-2024-20241212221629-150x150.jpg"
-            alt="Coolie"
-          />Chikitu vibe
-          <p>Anirdh Ravichander</p>
-        </div>
-        <div>
-          <img
-            src="./jiosaavn/Paiya-Dei-from-Think-Indie-Tamil-2024-20241023225604-150x150.jpg"
-            alt="paiyadei"
-          />Paiya Dei
-          <p>Asal Kolaru</p>
-        </div>
-        <div>
-          <img
-            src="./jiosaavn/Kadhalikka-Neramillai-Tamil-2025-20250107171541-150x150.jpg"
-            alt="ARR"
-          />Yennai Izhukkuthadi
-          <p>A.R.Rahman</p>
-        </div>
-        <div>
-          <img
-            src="./jiosaavn/SadLoveTamil_20250214065131_150x150.jpg"
-            alt="SadLoveTamil"
-          />Sad Love - Tamil
-          <p>39.7 k fans</p>
-        </div>
+        <div></div>
       </article>
     </main>
   </body>
 </html>
+
+
+<!-- To align icons using flex -->
+<!-- <div
+  class="h-[150px] w-full bg-black/60 hidden group-hover:flex flex-col items-center justify-center group-hover:cursor-pointer absolute top-0 left-0 rounded-[5px]"
+>
+  <div class="flex items-center justify-center flex-1">
+    <i
+      class="fa-solid fa-play text-white p-3 bg-black rounded-full text-xl flex items-center justify-center self-center"
+    ></i>
+  </div>
+  <div class="w-full flex justify-between px-3 pb-3">
+    <i class="fa-regular fa-heart text-white text-xl"></i>
+    <i class="fa-solid fa-ellipsis text-white text-xl"></i>
+  </div>
+</div> -->

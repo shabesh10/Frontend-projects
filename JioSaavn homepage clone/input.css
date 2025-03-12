@@ -1,13 +1,18 @@
 @import "tailwindcss";
 
-main article div img:hover {
+/* main article div img:hover {
     filter: brightness(40%);
     cursor: pointer;
-  }
+  } */
+
   main aside li:hover{
     cursor: pointer;
     color:#34cbb9;
   }
   main aside div:hover {
     cursor: pointer;
+  }
+
+  main article div img {
+    border-radius: 5px;
   }
